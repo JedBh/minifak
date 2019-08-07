@@ -1,7 +1,7 @@
 "use strict";
 
-const NAMES = ["Jed", "Einav", "Shmueli", "Gilad", "Ofek", "Gal T", "Ori", "Gal D", "Dedash",
-               "Koifman", "Romy", "Rotem", "Tahel", "Stav", "Alon"];
+const NAMES = ["הידידי", "אמבפה", "שמול", "ציפורן", "חפשני", "הודו", "אוראי", "מלמן", "דדש",
+               "קרויפס", "פרל", "רתם", "תהל?", "סטיב", "אלון"];
 
 function initSquares() {
     for (let i = 0; i < NAMES.length; i++) {
@@ -13,10 +13,11 @@ function initSquares() {
     }
     
     let div = document.createElement("div");
-    let textDiv = document.createTextNode("Confirm");
+    let textDiv = document.createTextNode("אשר");
 
     div.appendChild(textDiv);
     div.classList.add("box");
+    div.classList.add("box-confirm");
     div.id = "confirm";
     document.querySelector(".container").appendChild(div);
 }
